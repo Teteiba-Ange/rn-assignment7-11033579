@@ -28,5 +28,8 @@ Add to Cart: Allows users to add products to their shopping cart.
 Remove from Cart: Enables users to remove selected items from their cart.
 Async Data Fetching: Utilizes Axios for fetching data asynchronously from an external API.
 Local Storage: Uses AsyncStorage to store selected items locally on the device.
-![Screenshot of My App](../assets\Screenshot1.jpg)
+![Screenshot of My App](../assets/SCREEN1.jpg)
+![Screenshot of My App](../assets/SCREEN2.jpg)
+![Screenshot of My App](../assets/SCREEN3.jpg)
+![Screenshot of My App](../assets/SCREEN4.jpg)
 

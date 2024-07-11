@@ -27,6 +27,7 @@ const ItemList = ({ navigation }) => { // Ensure you receive navigation prop
       <Image style={styles.itemImage} source={{ uri: item.image }} />
       <Text style={styles.itemTitle}>{item.title}</Text>
       <Text style={styles.itemPrice}>${item.price}</Text>
+      <Image source={require('../assets/add_circle.png')}/>
     </View>
   );
 
@@ -48,10 +49,21 @@ const ItemList = ({ navigation }) => { // Ensure you receive navigation prop
 
   return (
     <View style={styles.container}>
+      <View style={{flex:1,marginBottom:50}}>
       <TouchableOpacity onPress={() => navigation.openDrawer()} style={styles.menuButton}>
         <Image source={require('../assets/Menu.png')} />
       </TouchableOpacity>
+      <View>
       <Image style={styles.header} source={require('../assets/Logo.png')}/>
+      </View>
+      <View style={{flexDirection:'row-reverse',marginRight:50}}>
+      <Image source={require('../assets/Search.png')} />
+      </View>
+      <View style={{marginLeft:320}}>
+      <Image source={require('../assets/shoppingBag.png')} />
+      </View>
+      </View>
+      
       <FlatList
         data={items}
         keyExtractor={(item) => item.id.toString()}
